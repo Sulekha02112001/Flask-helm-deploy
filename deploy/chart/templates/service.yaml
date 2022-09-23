@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "flask_hw.fullname" . }}
+  name: {{ template "tmf635-usage.fullname" . }}
   labels:
-    app: {{ template "flask_hw.name" . }}
-    chart: {{ template "flask_hw.chart" . }}
+    app: {{ template "tmf635-usage.name" . }}
+    chart: {{ template "tmf635-usage.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
@@ -15,5 +15,5 @@ spec:
       protocol: TCP
       name: http
   selector:
-    app: {{ template "flask_hw.name" . }}
+    app: {{ template "tmf635-usage.name" . }}
     release: {{ .Release.Name }}
