@@ -41,7 +41,7 @@ kubectl get svc
 ## browse using url
 
 ```hcl
-curl http:<ip>:<port>
+curl http://<ip>:<port>
 ```
 
 ## enable the ingress and modified the domain in values.yml  
