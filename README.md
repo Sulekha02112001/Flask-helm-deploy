@@ -20,7 +20,7 @@ helm install flaskapp chart/
 
 ## to uninstall
 
-``hcl 
+```hcl 
 helm uninstall flaskapp
 ```
 
